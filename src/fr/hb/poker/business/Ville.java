@@ -33,16 +33,6 @@ public class Ville {
     }
 
 
-    @Override
-    public String toString() {
-        return "Ville{" +
-                "nom='" + nom + '\'' +
-                ", codePostal='" + codePostal + '\'' +
-                ", latitude=" + latitude +
-                ", longitude=" + longitude +
-                ", joueurs=" + joueurs +
-                '}';
-    }
 
     public String getNom() {
         return nom;
@@ -82,5 +72,14 @@ public class Ville {
 
     public void setJoueurs(ArrayList<Joueur> joueurs) {
         this.joueurs = joueurs;
+    }
+    @Override
+    public String toString() {
+        return "Ville{" +
+                "nom='" + nom + '\'' +
+                ", codePostal='" + codePostal + '\'' +
+                ", latitude=" + latitude +
+                ", longitude=" + longitude +
+                '}';
     }
 }
